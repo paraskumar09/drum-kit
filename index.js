@@ -71,7 +71,7 @@ document.addEventListener("keydown",function(event){
         setTimeout(function(){
             activebtn.classList.remove("pressed");
 
-        },300);
+        },100);
  }
 
 
