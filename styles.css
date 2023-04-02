@@ -85,6 +85,16 @@ footer {
 .desc
 {
   font-size: 3rem;
- 
+}
 
+input
+{
+  width: 800px;
+  height: 50px;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  color: #DA0463;
+  font-size: 1.5rem;
+  border-style: none;
+  border-radius: 2rem;
 }
