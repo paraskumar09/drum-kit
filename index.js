@@ -28,32 +28,38 @@ document.addEventListener("keydown",function(event){
      var audio;
      switch (key) {
          case 'w':
-              audio=new Audio('sounds/tom-1.mp3');
-              
+              audio=new Audio('tom-1.mp3');
+              document.querySelectorAll(".drum")[0].style.color="#F7DB6A";
              break;
 
          case 'a':
-              audio=new Audio('sounds/tom-2.mp3');
+              audio=new Audio('tom-2.mp3');
+               document.querySelectorAll(".drum")[1].style.color="#FFD93D";
              break;
 
          case 's':
-              audio=new Audio('sounds/tom-3.mp3');
+              audio=new Audio('tom-3.mp3');
+               document.querySelectorAll(".drum")[2].style.color="#408E91";
              break;
          
          case 'd':
-              audio=new Audio('sounds/tom-4.mp3');
+              audio=new Audio('tom-4.mp3');
+               document.querySelectorAll(".drum")[3].style.color="#AEC2B6";
              break;    
          
          case 'j':
-              audio=new Audio('sounds/snare.mp3');
+              audio=new Audio('snare.mp3');
+               document.querySelectorAll(".drum")[4].style.color="#DF7857";
              break;
              
          case 'k':
-              audio=new Audio('sounds/crash.mp3');
+              audio=new Audio('crash.mp3');
+               document.querySelectorAll(".drum")[5].style.color="#DF2E38";
              break;    
 
          case 'l':
-              audio=new Audio('sounds/kick-bass.mp3');
+              audio=new Audio('kick-bass.mp3');
+               document.querySelectorAll(".drum")[6].style.color="#E7B10A";
              break;    
 
      }
@@ -61,6 +67,8 @@ document.addEventListener("keydown",function(event){
      audio.play();
  }
 
+
+ 
  function btnannimation(currentkey)
  {
 
@@ -70,10 +78,16 @@ document.addEventListener("keydown",function(event){
 
         setTimeout(function(){
             activebtn.classList.remove("pressed");
+            activebtn.style.color="black";
 
         },100);
- }
 
+        setTimeout(function(){
+            
+            activebtn.style.color="black";
+
+        },300);
+ }
 
 
 
