@@ -78,15 +78,11 @@ document.addEventListener("keydown",function(event){
 
         setTimeout(function(){
             activebtn.classList.remove("pressed");
-            activebtn.style.color="black";
+            activebtn.style.color="#DA0463";
 
         },100);
 
-        setTimeout(function(){
-            
-            activebtn.style.color="black";
 
-        },300);
  }
 
 
